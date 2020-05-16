@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/conCard"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintRight_toLeftOf="@id/libCard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/conTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conservatives"
+                android:textSize="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/conVal"
+                />
+
+            <TextView
+                android:id="@+id/conVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34.7"
+                android:textSize="30dp"
+                app:layout_constraintTop_toBottomOf="@id/conTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/conChange"
+                />
+
+            <TextView
+                android:id="@+id/conChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 2.1"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conVal"
+                />
+
+            <View
+                android:id="@+id/con_bar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="#00b1d4"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/libCard"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintRight_toLeftOf="@id/ndpCard"
+        app:layout_constraintLeft_toRightOf="@id/conCard"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/libTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liberals"
+                android:textSize="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/libVal"
+                />
+
+            <TextView
+                android:id="@+id/libVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34.7"
+                android:textSize="30dp"
+                app:layout_constraintTop_toBottomOf="@id/libTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/libChange"
+                />
+
+            <TextView
+                android:id="@+id/libChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 2.1"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/libVal"
+                />
+
+            <View
+                android:id="@+id/lib_bar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="#FF0000"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ndpCard"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/libCard"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ndpTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NDP"
+                android:textSize="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ndpVal"
+                />
+
+            <TextView
+                android:id="@+id/ndpVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34.7"
+                android:textSize="30dp"
+                app:layout_constraintTop_toBottomOf="@id/ndpTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ndpChange"
+                />
+
+            <TextView
+                android:id="@+id/ndpChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 2.1"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ndpVal"
+                />
+
+            <View
+                android:id="@+id/ndp_bar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="#eb9100"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/blocCard"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintRight_toLeftOf="@id/greenCard"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/conCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/blocTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bloc Quebecois"
+                android:textSize="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/blocVal"
+                />
+
+            <TextView
+                android:id="@+id/blocVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34.7"
+                android:textSize="30dp"
+                app:layout_constraintTop_toBottomOf="@id/blocTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/blocChange"
+                />
+
+            <TextView
+                android:id="@+id/blocChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 2.1"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/blocVal"
+                />
+
+            <View
+                android:id="@+id/bloc_bar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="#928ef5"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/greenCard"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintRight_toLeftOf="@id/ppcCard"
+        app:layout_constraintLeft_toRightOf="@id/blocCard"
+        app:layout_constraintTop_toBottomOf="@id/libCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/greenTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green"
+                android:textSize="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/greenVal"
+                />
+
+            <TextView
+                android:id="@+id/greenVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34.7"
+                android:textSize="30dp"
+                app:layout_constraintTop_toBottomOf="@id/greenTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/greenChange"
+                />
+
+            <TextView
+                android:id="@+id/greenChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 2.1"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/greenVal"
+                />
+
+            <View
+                android:id="@+id/green_bar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="#54ff54"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ppcCard"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/greenCard"
+        app:layout_constraintTop_toBottomOf="@id/ndpCard">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/ppcTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PPC"
+                android:textSize="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ppcVal"
+                />
+
+            <TextView
+                android:id="@+id/ppcVal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34.7"
+                android:textSize="30dp"
+                app:layout_constraintTop_toBottomOf="@id/ppcTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ppcChange"
+                />
+
+            <TextView
+                android:id="@+id/ppcChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 2.1"
+                android:textSize="16dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ppcVal"
+                />
+
+            <View
+                android:id="@+id/ppc_bar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="3dp"
+                android:background="#0262d6"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
