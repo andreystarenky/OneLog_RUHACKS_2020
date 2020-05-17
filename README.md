@@ -8,4 +8,4 @@ the progress of all their patients, as well as their information.
 ## Built with
 Android Studio, Firebase, Google Cloud, Flask
 
-See https://devpost.com/software/onelog for more a better description 
+See https://devpost.com/software/onelog for a full description 
